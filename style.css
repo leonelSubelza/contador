@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+
+:root{
+    --red-color: #d40000;
+    --green-color: #00c23d;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    background-color: rgb(25, 24, 66);
+    color:#fff;
+    font-size: 30px;
+    font-family: 'Comforter', cursive;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.numero{
+    font-size: 60px;
+    transition: .1s all;
+    position: absolute;
+}
+
+.numero-cambiarValor{
+    font-size: 100px;
+    text-shadow: 0 0 20px #fff,0 0 2000px #fff,0 0 20px #fff;
+
+}
+
+.container__titulo{
+    font-size: 150px;
+    color:#fff;
+
+}
+
+.container__nav{
+    width: 300px;
+}
+
+.container__nav > ul{
+    display: flex;
+    justify-content: center;
+}
+
+.lista__item{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 20px;
+    width: 200px;
+    height: 100px;
+    
+}
+
+.lista__item button{
+
+    height: 50px;
+    width: 100px;
+    
+    border-style: none;
+    border-radius: 30%;
+    transition: .5s all;
+    outline: none;
+}
+
+#restar{
+    border: 1px solid var(--red-color);
+    color: var(--red-color);
+}
+#sumar{
+    border: 1px solid var(--green-color);
+    color: var(--green-color);
+}
+
+#restar:hover, #restar:focus{
+    height: 55px;
+    width: 110px;
+    background-color: var(--red-color);
+    color: #fff;
+}
+
+#sumar:hover, #sumar:focus{
+    height: 55px;
+    width: 110px;
+    background-color: var(--green-color);
+    color: #fff;
+}
+
+#sumar:hover{
+    background-color:var(--green-color);
+}
+
+#restar:hover{
+    background-color: var(--red-color);
+}
+
+
+.positivo{
+    color:var(--green-color);
+}
+.negativo{
+    color:var(--red-color);
+}
